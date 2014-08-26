@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Entry | Simple JSON Storage</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/entry.js"></script>
+</head>
+
+<body style="padding:40px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <form role="form" id="inputSignUp">
+                    <div class="form-group">
+                        <label for="inputFirstName">First name</label>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputLastName">Last name</label>
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmailAddress">Email address</label>
+                        <input type="email" class="form-control" id="inputEmailAddress" placeholder="Email address">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">Subscribe to our newsletter
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="save();">Save</button>
+                    <button class="btn btn-success" onclick="load();">Load</button>
+                    <button type="reset" class="btn btn-warning">Clear</button>
+                    <button class="btn btn-danger" style="float:right" onclick="clearLocal();">Delete</button>
+                </form>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-md-4" id="inputResults">
+                <p><b>First name</b><br>
+                    <span id="resultsFirstName"></span>
+                </p>
+                <p><b>Last name</b><br>
+                    <span id="resultsLastName"></span>
+                </p>
+                <p><b>Email address</b><br>
+                    <span id="resultsEmailAddress"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
