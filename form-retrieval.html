@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Retreival | Simple JSON Storage</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/entry.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<p><b>First name</b><br>
+                    <span id="resultsFirstName"></span>
+                </p>
+                <p><b>Last name</b><br>
+                    <span id="resultsLastName"></span>
+                </p>
+                <p><b>Email address</b><br>
+                    <span id="resultsEmailAddress"></span>
+                </p>
+                <button class="btn btn-success" onclick="loadData();">Load</button>
+				<button class="btn btn-danger" onclick="clearLocal();">Delete</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

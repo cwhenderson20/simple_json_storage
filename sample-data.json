@@ -1,0 +1,20 @@
+{
+    "users": [{
+        "first-name": "Chris",
+        "last-name": "Henderson",
+        "email": "chris@app-press.com"
+    }, {
+        "first-name": "Anup",
+        "last-name": "Murarka",
+        "email": "anup@app-press.com"
+    }, {
+        "first-name": "User1",
+        "last-name": "Smith",
+        "email": "example1@example.com"
+    }, {
+        "first-name": "User2",
+        "last-name": "Smith",
+        "email": "example2@example.com"
+    }]
+
+};

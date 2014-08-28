@@ -10,10 +10,10 @@
     <script src="js/entry.js"></script>
 </head>
 
-<body style="padding:40px">
+<body>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <form role="form" id="inputSignUp">
                     <div class="form-group">
                         <label for="inputFirstName">First name</label>
@@ -27,28 +27,9 @@
                         <label for="inputEmailAddress">Email address</label>
                         <input type="email" class="form-control" id="inputEmailAddress" placeholder="Email address">
                     </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox">Subscribe to our newsletter
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary" onclick="save();">Save</button>
-                    <button class="btn btn-success" onclick="load();">Load</button>
+                    <button type="submit" class="btn btn-primary" onclick="saveData();">Save</button>
                     <button type="reset" class="btn btn-warning">Clear</button>
-                    <button class="btn btn-danger" style="float:right" onclick="clearLocal();">Delete</button>
                 </form>
-            </div>
-            <div class="clearfix visible-xs-block"></div>
-            <div class="col-md-4" id="inputResults">
-                <p><b>First name</b><br>
-                    <span id="resultsFirstName"></span>
-                </p>
-                <p><b>Last name</b><br>
-                    <span id="resultsLastName"></span>
-                </p>
-                <p><b>Email address</b><br>
-                    <span id="resultsEmailAddress"></span>
-                </p>
             </div>
         </div>
     </div>
