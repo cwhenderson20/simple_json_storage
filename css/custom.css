@@ -4,3 +4,7 @@ body {
 #inputSignUp {
     padding-bottom: 15px;
 }
+#reader {
+	width: 80%;
+	height: 200px;
+}

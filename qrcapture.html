@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QR Code Capture</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/html5-qrcode.min.js"></script>
+    <script src="js/capture.js"></script>
+    <script src="js/reader.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- <div id="reader" style="width:300px; height:200px">
+                </div> -->
+                <input type="file" accept="image/*" capture="camera" onchange="handleFiles(this.files)"><br>
+                <img src="" height="200" alt="Image preview...">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

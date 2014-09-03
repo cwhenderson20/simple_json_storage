@@ -9,7 +9,7 @@ function onStorageEvent(storageEvent) {
     alert("Storage event!");
 }
 
-function saveData() {
+function saveData() {	
     localStorage.firstName = JSON.stringify(document.getElementById("inputFirstName").value);
     localStorage.lastName = JSON.stringify(document.getElementById("inputLastName").value);
     localStorage.emailAddress = JSON.stringify(document.getElementById("inputEmailAddress").value);
