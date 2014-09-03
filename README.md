@@ -1,4 +1,4 @@
 simple_json_storage
 ===================
 
-Workaround for sandboxed localstorage containers using UIWebView on iOS
+Sample project to demonstrate using localStorage as a means of app synchronization and communication.
