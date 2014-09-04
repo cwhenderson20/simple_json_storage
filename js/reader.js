@@ -2,7 +2,7 @@
          alert(data);
      },
      function(error) {
-         //show read errors 
+          //show read errors ;
      }, function(videoError) {
          //the video stream could be opened
      }
