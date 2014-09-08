@@ -10,6 +10,7 @@
     <script src="js/html5-qrcode.min.js"></script>
     <script src="js/capture.js"></script>
     <script src="js/reader.js"></script>
+    <script src="js/load-image.min.js"></script>
 </head>
 
 <body>
@@ -18,8 +19,15 @@
             <div class="col-md-8">
                 <!-- <div id="reader" style="width:300px; height:200px">
                 </div> -->
-                <input type="file" accept="image/*" capture="camera" onchange="handleFiles(this.files)"><br>
+                <!-- <input type="file" accept="image/*" capture="camera" onchange="handleFiles(this.files)"> -->
+                <input type="file" id="file-input">
+                <br>
                 <img src="" height="200" alt="Image preview...">
+            </div>
+            <div class="col-md-4">
+            	<div id="read"></div>
+                <div id="read_error"></div>
+                <div id="vid_error"></div>
             </div>
         </div>
     </div>

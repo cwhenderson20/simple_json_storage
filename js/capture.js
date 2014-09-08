@@ -1,9 +1,9 @@
-function previewFile() {
+function previewFile(img) {
   var preview = document.querySelector('img');
   var file    = document.querySelector('input[type=file]').files[0];
   var reader  = new FileReader();
 
-  preview.src = fileSource;
+  preview.src = img;
   
 
 /*  if (file) {
