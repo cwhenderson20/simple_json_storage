@@ -6,9 +6,9 @@ function previewFile(img) {
   preview.src = img;
   
 
-/*  if (file) {
+  if (file) {
     reader.readAsDataURL(file);
   } else {
     preview.src = "";
-  }*/
+  }
 }

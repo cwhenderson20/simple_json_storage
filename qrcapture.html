@@ -5,33 +5,34 @@
     <title>QR Code Capture</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/html5-qrcode.min.js"></script>
-    <script src="js/capture.js"></script>
-    <script src="js/reader.js"></script>
-    <script src="js/load-image.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <!-- <div id="reader" style="width:300px; height:200px">
-                </div> -->
-                <!-- <input type="file" accept="image/*" capture="camera" onchange="handleFiles(this.files)"> -->
-                <input type="file" id="file-input">
+            <div class="col-md-8 col-sm-12">
+                <h3>Select a file...</h3>
+                <span class="btn btn-primary btn-file">
+                    Browse
+                    <input type="file" accept="image/*" id="file-input">
+                </span>
                 <br>
-                <img src="" height="200" alt="Image preview...">
+                <!-- <div alt="Image preview..." id="img-preview"></div> -->
             </div>
-            <div class="col-md-4">
-            	<div id="read"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <div id="read"></div>
                 <div id="read_error"></div>
                 <div id="vid_error"></div>
             </div>
         </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/html5-qrcode.min.js"></script>
+    <script src="js/reader.js"></script>
+    <script src="js/load-image.min.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,35 @@
 body {
-    padding: 40px 15px;
+    padding: 20px 15px;
 }
 #inputSignUp {
     padding-bottom: 15px;
 }
-#reader {
-	width: 80%;
-	height: 200px;
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    padding: 10 0;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+#img-preview {
+	background-repeat: no-repeat;
+	height: 400px;
+	margin: 15px 0px;
+}
+#read {
+	margin: 10px 0px;
+
 }
