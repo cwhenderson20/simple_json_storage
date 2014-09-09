@@ -3,6 +3,7 @@
 
 <head>
     <title>QR Code Capture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -22,9 +23,19 @@
         </div>
         <div class="row">
             <div class="col-md-8 col-sm-12">
-                <div id="read"></div>
+                <div id="read">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="results-title"></div>
+                        <div class="panel-body" id="results-body"></div>
+                    </div>
+                </div>
                 <div id="read_error"></div>
                 <div id="vid_error"></div>
+                <p>
+                    <em>
+                        <small>Currently, all results, including errors, are considered successful scans.</small>
+                    </em>
+                </p>
             </div>
         </div>
     </div>

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    if (localStorage.scanResults) 
+    	addResults(false, localStorage.scanResults);
     document.getElementById('file-input').onchange = function(e) {
         function loadImageOrientation(file, callback, options) {
             loadImage.parseMetaData(file, function(data) {
@@ -19,7 +21,7 @@ $(document).ready(function() {
             }, {
                 noRevoke: true,
                 canvas: true,
-                maxWidth: 275
+                maxWidth: 1000
             }
         );
     }
@@ -28,9 +30,19 @@ $(document).ready(function() {
         $('#img-preview').css('background-image', 'url(' + img + ')');
     }
 
+    function addResults(newResults, results) {
+    	if (newResults)  {
+    		$("#results-title").html("Current scan results:");
+    	} else {
+    		$("#results-title").html("Previous scan results:");
+    	}
+    	$("#results-body").html(JSON.parse(results));
+    }
+
     $('#file-input').html5_qrcode(function(data) {
-        $('#read').html(data);
-    }, function(error) {
+        localStorage.scanResults = JSON.stringify(data);
+        addResults(true, localStorage.scanResults);
+    }, function(error) { 								// these don't work yet; all results are considered "success"
         $('#read_error').html(error);
     }, function(videoError) {
         $('#vid_error').html(videoError);
